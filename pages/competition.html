@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyFootball</title>
+    <meta name="description" content="My first PWA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../css/materialize.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="manifest" href="../manifest.json" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="#">
+    <meta name="theme-color" content="#e53935" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navbar-fixed">
+      <nav class="red darken-2" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo" id="logo-container">
+            <img src="../img/logo.png" alt="" height="64" style="padding: 15px 0;">
+          </a>
+          <a href="../index.html" class="sidenav-trigger" data-target="nav-mobile">
+            <i class="large material-icons">arrow_back</i>
+          </a>
+          <ul class="topnav right hide-on-med-and-down"></ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="nav-mobile"></ul>
+    <!-- End of Navigation -->
+
+
+    <!-- content -->
+    <div class="container" id="competition-content">
+    </div>
+    <!-- End of content -->
+
+    <!-- save floating action button  -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red" id="save">
+        <i class="large material-icons">save</i>
+      </a>
+    </div>
+    <!-- end of save floating action button  -->
+
+    <!-- delete floating action button  -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red" id="delete">
+        <i class="large material-icons">delete</i>
+      </a>
+    </div>
+    <!-- end of delete floating action button  -->
+
+    <!-- Footer  -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <a href="#" class="brand-logo" id="logo-container">
+              <img src="../img/logo.png" alt="" height="64" style="padding: 15px 0;">
+            </a>
+            <p class="grey-text text-lighten-3">Football Competitions Portal</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Copyright © MyFootball 2020-present. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer  -->
+
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/toUint8Array.js"></script>
+    <script src="../js/register-sw.js"></script>
+    <script src="../js/competition.js"></script>
+    <script src="../js/view.js"></script>
+    <script src="../js/idb.js"></script>
+    <script src="../js/db.js"></script>
+  </body>
+</html>

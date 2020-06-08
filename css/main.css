@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:host {
+  display: flex;
+  width: 100%;
+  color: black;
+}
+
+#index-content, #competition-content {
+  min-height: 90vh;
+}
+
+.nav-breadcrumb {
+  background: none;
+  box-shadow: none;
+}
+
+.breadcrumb {
+  color: #d32f2f;
+}
+
+.breadcrumb:before {
+  color: rgba(0,0,0,0.7);
+}
+
+.breadcrumb:last-child {
+  color: black;
+}
+
+.page-footer {
+  background-color: #d32f2f;
+}
+
+ul.footer-links li a {
+  color: #fff;
+}
