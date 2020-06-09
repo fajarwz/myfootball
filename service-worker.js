@@ -36,7 +36,26 @@ workbox.precaching.precacheAndRoute([
   { url: '/js/db.js', revision: '1' },
   { url: '/js/idb.js', revision: '1' },  
   { url: '/js/register-sw.js', revision: '1' },
-]);
+], {
+  // ignore a different set of search parameters
+  ignoreUrlParametersMatching: [/.*/]
+});
+
+// offline use 
+workbox.routing.registerRoute(    
+  new RegExp('^https:\/\/cors-anywhere\.herokuapp\.com\/https:\/\/api\.football-data\.org\/'),
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'root',
+  })
+);
+
+// caching google fonts 
+workbox.routing.registerRoute(    
+  new RegExp('https:\/\/fonts\.googleapis\.com\/'),
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'google-fonts',
+  })
+);
 
 workbox.routing.registerRoute(
   new RegExp('\/css\/|\/img\/|\/index.html'),

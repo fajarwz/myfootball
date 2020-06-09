@@ -50,7 +50,7 @@ function getCompetitionByIdView(data) {
             getCompetitionByIdHTML += `
                 <tr>
                     <td>
-                        <img src="${team.team.crestUrl}" style="height: 15px;">
+                        <img src="${team.team.crestUrl}" alt="club logo" style="height: 15px;">
                     </td>
                     <td>${team.team.name}</td>
                     <td>${team.playedGames}</td>
@@ -120,7 +120,7 @@ function getSavedCompetitionByIdView(data) {
       getSavedCompetitionByIdHTML += `
           <tr>
             <td>
-              <img src="${team.team.crestUrl}" style="height: 15px;">
+              <img src="${team.team.crestUrl}" alt="club logo" style="height: 15px;">
             </td>
             <td>${team.team.name}</td>
             <td>${team.playedGames}</td>
