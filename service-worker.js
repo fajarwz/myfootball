@@ -43,15 +43,16 @@ workbox.precaching.precacheAndRoute([
 
 // offline use 
 workbox.routing.registerRoute(    
-  new RegExp('^https:\/\/cors-anywhere\.herokuapp\.com\/https:\/\/api\.football-data\.org\/'),
+  // new RegExp('^https:\/\/cors-anywhere\.herokuapp\.com\/https:\/\/api\.football-data\.org\/'),
+  new RegExp('https://cors-anywhere.herokuapp.com/http://api.football-data.org/v2/'),
   workbox.strategies.staleWhileRevalidate({
-    cacheName: 'root',
+    cacheName: 'fetch-api',
   })
 );
 
 // caching google fonts 
 workbox.routing.registerRoute(    
-  new RegExp('https:\/\/fonts\.googleapis\.com\/'),
+  new RegExp('https://fonts.googleapis.com/'),
   workbox.strategies.staleWhileRevalidate({
     cacheName: 'google-fonts',
   })

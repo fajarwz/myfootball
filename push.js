@@ -1,8 +1,8 @@
 var webPush = require('web-push');
  
 const vapidKeys = {
-   "publicKey": "BIGcfSpQfhc5zTg6QiUS94qA_j6Na8OLwroUXT5ooWtUbZMDFBTnaMNdtc6Wd2ChiXrfXXh6MZmvu1-5kIWNyU8",
-   "privateKey": "yEFiCoUEbjAWEv-kW7o6ozcUxqGgJTE4LptICPXMAeo"
+   "publicKey": "BLiH8p5B6A_oSkxQ6cw7u75E_h7KtWltb2pnYBxA0D6rVaqDq7T5CfXIgZI0SDSgQc1T42ATrUdmxnFeYcllbsU",
+   "privateKey": "AhK5EgKtNwJK3a8yTRVmL4dInMZCq4ZopoJZEkQtbGE"
 };
  
  
@@ -12,10 +12,10 @@ webPush.setVapidDetails(
    vapidKeys.privateKey
 )
 var pushSubscription = {
-   "endpoint": "https://fcm.googleapis.com/fcm/send/d3pSXyt2ayA:APA91bGztsGHgFqPhii8s81cdOsZMNQaUealudJXs56IBG5Gl4EZSjfmFrBo7CLuQyfCLZPuJ95LfYfW85vzfJdvs-77AZjw1DK7_pTZt7IimxRbQ9ghc57VFBlt5bCjDtsRx5H7DRu8",
+   "endpoint": "https://fcm.googleapis.com/fcm/send/ekPLPAobCsQ:APA91bGsGiRKK6rr4ei-XTJFh7G2kNrJg_P25_1AcOiAnDJdtdR_kpSC05Yq5rYXDdvG4PVsnnMZJ2d0LPMex7oFZES0r65nfzH9Gaoj5eHOXK2D0dP3zlH-hMakOH7gjuxC4y6DCxhN",
    "keys": {
-       "p256dh": "BJ4kQOPiSjLDOdzG2YD5MbbR5QuvTcgV5UWAG7NmoFMIRIrYY3JoNuKYr7DaU3ztLw4sGCxkkFC0MWaQBzt6YNU=",
-       "auth": "oSfJfY62q4OViiW8H3R/7g=="
+       "p256dh": "BPfsvzJBFBM/EJ8zBYQDG6e22049an5J4NHDtGrorcTkGshMNeHmq6KUuxlJmeKYp7RaZDI5X8duY2QtL+s3TKE=",
+       "auth": "EtnpgC9nnX8a0VqgWknqCQ=="
    }
 };
 var payload = 'Hai, selamat datang di MyFootball!';
